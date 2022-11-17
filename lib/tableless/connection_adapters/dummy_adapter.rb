@@ -8,5 +8,9 @@ module Tableless
     def schema_cache
       @schema_cache
     end
+
+    def exec_query(*)
+      ActiveRecord::Result.empty
+    end
   end
 end
